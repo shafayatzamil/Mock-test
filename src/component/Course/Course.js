@@ -7,8 +7,12 @@ const Course = ({tropic}) => {
     return (
         <div className='box'>
          <img src={logo} alt="" />
-         <p>this is all course{name}</p>
-         <button><Link to={`${id}`}>add to cart</Link></button>
+         <div className='tiny-box'>
+         <h3>{name}</h3>
+      
+         <Link className='btn-link' to={`/tropic/${id}`}>add to cart</Link>
+
+         </div>
         </div>
     );
 };

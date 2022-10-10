@@ -1,7 +1,28 @@
+
+.box img{
+    height: 250px;
+    width: 250px;
+}
 .box{
-    border:2px solid red;
+    box-shadow: 4px 8px 10px rgb(185, 185, 185);
+    padding: 20px;
     margin:10px;
-    border-radius: 10px;
-    
-    
+}
+.tiny-box{
+    display: flex;
+    justify-content: space-around;
+    /* border:2px solid blue; */
+    box-shadow: 4px 8px 10px #746868;
+    margin-top:10px;
+    border-radius: 5px;
+    padding:5px;
+}
+
+.btn-link{
+    text-decoration: none;
+    color:black;
+    background-color: #ffca3a;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
 }

@@ -1,5 +1,22 @@
 .course-box{
-    grid: grid;
-    grid-template-columns: repeat(4,1fr);
-    background-color: aquamarine;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.quiz-heading{
+    margin-top:70px;
+}
+.headline{
+    font-size: 60px;
+    color:rgb(63, 63, 63)
+}
+.headline2{
+    font-size: 20px;
+}
+.course-quiz{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:5px;
+    background-color:#daedff;
+    border-radius: 15px;
 }

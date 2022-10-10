@@ -1,0 +1,11 @@
+.ques-headline{
+    font-size: 32px;
+    color:rgb(55, 63, 73)
+}
+.blog-container{
+    margin:30px;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 2px solid yellowgreen;
+    box-shadow: 8px 8px 10px gray;
+}

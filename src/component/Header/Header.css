@@ -1,0 +1,15 @@
+.header-box{
+    display: flex;
+    justify-content: space-between;
+    margin:30px;
+    align-items: center;
+}
+.header-title{
+    color:#3e8989;
+    font-size: 42px;
+}
+.nav-box{
+    text-decoration: none;
+    margin:20px;
+    font-size: 20px;
+ }

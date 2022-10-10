@@ -1,10 +1,10 @@
 .header-box{
     display: flex;
     justify-content: space-between;
-    margin:30px;
     align-items: center;
-    box-shadow: 20px 20px  20px solid rgb(0, 0, 0);
-    border:1px solid red;
+    margin:20px;
+    box-shadow: 4px 4px 10px #c0c0c0;
+    padding:10px;
 }
 .header-title{
     color:#3e8989;

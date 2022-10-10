@@ -1,0 +1,5 @@
+.course-box{
+    grid: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: aquamarine;
+}

@@ -1,15 +1,14 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Courses from '../Courses/Courses';
+import Course from '../Course/Course';
 
 const Tropics = () => {
     const tropics= useLoaderData();
     const newTropics= tropics.data;
     return (
-        <div>
-            <h2> this is from Tropics bro:{tropics.data.length}</h2>
+        <div className='course-box'>
             {
-                newTropics.map(tropic=>)
+                newTropics.map(tropic=><Course key={tropic.id}  tropic={tropic}></Course>)
             }
         </div>
     );

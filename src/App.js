@@ -6,6 +6,7 @@ import ErrorPage from './component/ErrorPage/ErrorPage';
 import Tropics from './component/Tropics/Tropics';
 import Statics from './component/Statics/Statics';
 import Blog from './component/Blog/Blog';
+import CourseDetails from './component/CouseDetails/CourseDetails';
 
 function App() {
   const router=createBrowserRouter([
@@ -15,7 +16,14 @@ function App() {
     
     children:[
       {path:'/',element:<Tropics></Tropics>,
-      loader:()=>fetch('https://openapi.programming-hero.com/api/quiz')
+    loader:()=>fetch('https://openapi.programming-hero.com/api/quiz')
+    },
+    {
+      path:'/:id',
+      loader:async({params})=>{
+        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+      },
+      element:<CourseDetails></CourseDetails>
     },
       {path:'/statics',element:<Statics></Statics>},
       {path:'/blog',element:<Blog></Blog>},

@@ -12,9 +12,11 @@ function App() {
     {path:'/',
     element:<Main></Main>,
     errorElement:<ErrorPage></ErrorPage>,
-    loader:()=>fetch(`https://openapi.programming-hero.com/api/quiz`),
+    
     children:[
-      {path:'/',element:<Tropics></Tropics>},
+      {path:'/',element:<Tropics></Tropics>,
+      loader:()=>fetch('https://openapi.programming-hero.com/api/quiz')
+    },
       {path:'/statics',element:<Statics></Statics>},
       {path:'/blog',element:<Blog></Blog>},
     ],

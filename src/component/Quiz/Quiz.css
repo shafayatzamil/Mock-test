@@ -1,0 +1,14 @@
+.quiz-container{
+    border:2px solid green;
+    margin: 20px;
+    padding:20px;
+
+}
+.quiz-heading{
+    color:#0992aa;
+    font-size: 20px;
+}
+.quiz-option{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}

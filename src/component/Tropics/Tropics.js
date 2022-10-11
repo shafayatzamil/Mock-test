@@ -8,7 +8,7 @@ const Tropics = () => {
     const newTropics= tropics.data;
     return (
         <div className='course-box'>
-           <div  class="quiz-heading">
+           <div  className="quiz-heading">
                 <h1 className='headline'>Come teach with us</h1>
                 <p className='headline2'>Become an instructor and change lives — including your own</p>
             </div>

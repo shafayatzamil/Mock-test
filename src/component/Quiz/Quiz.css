@@ -19,3 +19,11 @@
     margin:20px;
     padding:20px;
 }
+
+.icon-fav{
+    color:#004e89;
+    margin:20px;
+    /* background-color: #caf0f8; */
+    background-color: #ffd60a;
+    border-radius: 10px;
+}

@@ -2,10 +2,11 @@ import React from "react";
 import "./Quiz.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaMedapps} from 'react-icons/fa';
 
 const Quiz = ({ questions }) => {
-  // console.log(questions);
-  const { question, options, correctAnswer } = questions;
+//   console.log(questions);
+  const {question, options, correctAnswer } = questions;
   const checkTheAns = (ans) => {
     if (ans === correctAnswer) {
         toast('Correct answer✌', {
@@ -20,7 +21,7 @@ const Quiz = ({ questions }) => {
             });
       
     } else {
-        toast('Wrong answer✌', {
+        toast('Wrong answer🧨', {
             position: "top-center",
             autoClose: 1000,
             hideProgressBar: false,
@@ -33,14 +34,19 @@ const Quiz = ({ questions }) => {
       
     }
   };
+  const iconsClicked=(hint)=>{
+    // alert({hint});
+    console.log(hint);
+  }
   return (
     <div className="quiz-container">
       <div className="quiz-heading">
-        <h2>quiz:{question}</h2>
+      
+        <h2>quiz:{question} <span onClick={()=>iconsClicked(5)} className="icon-fav"><FaMedapps></FaMedapps></span></h2>
       </div>
       <div className="quiz-option">
         {options.map((quizOption) => (
-          <div className="option-box" onClick={() => checkTheAns(quizOption)}>
+          <div className="option-box" onClick={()=> checkTheAns(quizOption)}>
             <li >{quizOption}</li>
           </div>
         ))}

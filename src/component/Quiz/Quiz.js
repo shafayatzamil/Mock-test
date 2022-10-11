@@ -47,7 +47,8 @@ const Quiz = ({ questions }) => {
       <div className="quiz-option">
         {options.map((quizOption) => (
           <div className="option-box" onClick={()=> checkTheAns(quizOption)}>
-            <li >{quizOption}</li>
+            {/* <li >{quizOption}</li> */}
+            <li>{quizOption}</li>
           </div>
         ))}
       </div>

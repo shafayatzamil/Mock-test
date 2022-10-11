@@ -36,7 +36,7 @@ const Quiz = ({ questions }) => {
   };
   const iconsClicked=(hint)=>{
     // alert({hint});
-    console.log(hint);
+    console.log('toasted add');
   }
   return (
     <div className="quiz-container">

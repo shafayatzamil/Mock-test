@@ -11,4 +11,11 @@
 .quiz-option{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+  border:2px solid green;
+  padding:20px;
+}
+.option-box{
+    border:2px solid red;
+    margin:20px;
+    padding:20px;
 }

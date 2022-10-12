@@ -34,15 +34,18 @@ const Quiz = ({ questions }) => {
       
     }
   };
-  const iconsClicked=(hint)=>{
+  const iconsClicked=()=>{
     // alert({hint});
-    console.log('toasted add');
+    // console.log('toasted add');
+    // console.log({correctAnswer});
+    // alert(JSON.stringify({correctAnswer}));
+    toast(`correct answer is, {JSON.stringify({correctAnswer})}`);
   }
   return (
     <div className="quiz-container">
       <div className="quiz-heading">
       
-        <h2>quiz:{question} <span onClick={()=>iconsClicked(5)} className="icon-fav"><FaMedapps></FaMedapps></span></h2>
+        <h2>quiz:{question} <span onClick={()=>iconsClicked()} className="icon-fav"><FaMedapps></FaMedapps></span></h2>
       </div>
       <div className="quiz-option">
         {options.map((quizOption) => (

@@ -13,7 +13,7 @@ second steps:-----
 6.Set the dynamic api then set it on router
 7.then show the quiz (question+ans)
 8.if option is correct setup toast it correct and wrong
-9.take icons from the favicons.if it clicks show the answer
+9.take icons from the favicons .if it clicks show the answer
 
 
 third steps:---

@@ -8,7 +8,7 @@ const Header = () => {
       <h1 className="header-title">Mock Test</h1>
       <nav>
         <Link className="nav-box" to="/">
-          Tropics
+          Home
         </Link>
         <Link className="nav-box" to="/statics">
           Statics

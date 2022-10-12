@@ -27,3 +27,19 @@
     background-color: #ffd60a;
     border-radius: 10px;
 }
+
+
+@media (max-width: 480px) {
+  .quiz-option{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .quiz-option{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+}

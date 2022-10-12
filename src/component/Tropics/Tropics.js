@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Course from '../Course/Course';
 import './Tropics.css';
+import codeImages from '../images/headerImages.jpg';
 
 const Tropics = () => {
     const tropics= useLoaderData();
@@ -9,8 +10,11 @@ const Tropics = () => {
     return (
         <div className='course-box'>
            <div  className="quiz-heading">
-                <h1 className='headline'>Come teach with us</h1>
-                <p className='headline2'>Become an instructor and change lives — including your own</p>
+                <div><h1 className='headline'>Come teach with us</h1>
+                <p className='headline2'>Become an Developer and change lives — including your own</p></div>
+                <div className='headerImage' >
+                    <img src={codeImages} alt="" />
+                 </div>
             </div>
             <div className='course-quiz'>
             {

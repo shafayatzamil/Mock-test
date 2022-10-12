@@ -6,7 +6,8 @@ import { FaMedapps} from 'react-icons/fa';
 
 const Quiz = ({ questions }) => {
 //   console.log(questions);
-  const {question, options, correctAnswer } = questions;
+  const {question, options, correctAnswer} = questions;
+
   const checkTheAns = (ans) => {
     if (ans === correctAnswer) {
         toast('Correct answer✌', {
@@ -35,11 +36,7 @@ const Quiz = ({ questions }) => {
     }
   };
   const iconsClicked=()=>{
-    // alert({hint});
-    // console.log('toasted add');
-    // console.log({correctAnswer});
-    // alert(JSON.stringify({correctAnswer}));
-    toast(`correct answer is, {JSON.stringify({correctAnswer})}`);
+    toast.success(`correct answer is,${correctAnswer}`);
   }
   return (
     <div className="quiz-container">
@@ -49,7 +46,7 @@ const Quiz = ({ questions }) => {
       </div>
       <div className="quiz-option">
         {options.map((quizOption) => (
-          <div className="option-box" onClick={()=> checkTheAns(quizOption)}>
+          <div  className="option-box" onClick={()=> checkTheAns(quizOption)}>
             {/* <li >{quizOption}</li> */}
             <li>{quizOption}</li>
           </div>
